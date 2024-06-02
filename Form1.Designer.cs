@@ -104,6 +104,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(932, 467);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
             // btnCancel
             // 
@@ -115,6 +116,7 @@
             btnCancel.TabIndex = 19;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // rbStatus2
             // 
@@ -177,13 +179,14 @@
             // btnDelete
             // 
             btnDelete.Font = new Font("Microsoft JhengHei UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.Location = new Point(317, 351);
+            btnDelete.Location = new Point(357, 369);
             btnDelete.Margin = new Padding(4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(136, 43);
+            btnDelete.Size = new Size(136, 57);
             btnDelete.TabIndex = 12;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnModify
             // 
@@ -195,6 +198,7 @@
             btnModify.TabIndex = 11;
             btnModify.Text = "Modify";
             btnModify.UseVisualStyleBackColor = true;
+            btnModify.Click += btnModify_Click;
             // 
             // btnAdd
             // 
